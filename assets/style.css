@@ -1,0 +1,20 @@
+header {
+    display: flex;
+}
+
+header h1 {
+    font-size:50px ;
+}
+
+.name {
+    color: green;
+}
+
+header nav {
+    font-size: 20px;
+    margin: 40px;
+    display: inherit;
+    position: relative;
+    float: left;
+}
+
