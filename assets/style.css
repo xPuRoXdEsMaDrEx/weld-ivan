@@ -1,9 +1,17 @@
+:root {
+    --lightblue:(#3489a5);
+}
+
 header {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: gray;
 }
 
 header h1 {
     font-size:50px ;
+    background-color: var(--lightblue);
 }
 
 .name {
@@ -14,7 +22,10 @@ header nav {
     font-size: 20px;
     margin: 40px;
     display: inherit;
-    position: relative;
-    float: left;
+}
+
+header a {
+    color: var(--lightblue);
+    text-decoration: underline 5px;
 }
 
