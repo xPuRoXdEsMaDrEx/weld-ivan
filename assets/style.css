@@ -1,6 +1,6 @@
 /* Stored vaiables */
 :root {
-    --header-color: blue;
+    --main-color: blue;
 }
 
 /* Sets to default CSS styling to entire page */
@@ -8,10 +8,9 @@
     font-family: 'Times New Roman', Times, serif;
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
 }
 
-/* Body header styling */
+/* Body header Styling */
 header {
     padding: 10px;
     display: flex;
@@ -23,13 +22,8 @@ header {
 header h1 {
     font: size 50px ;
     background-color: green;
-    padding-left: 40px;
-    padding-right: 20px;
-    border: 3px  solid var(--header-color);
-}
-
-.name {
-    color: var(--header-color);
+    padding: 0px 20px 0px 40px;
+    border: 3px  solid var(--main-color);
 }
 
 header nav ul li {
@@ -43,13 +37,36 @@ header nav ul li a {
     padding-right: 25px;
 }
 
-/* Body image section and Quote Properties */
+.name {
+    color: var(--header-color);
+}
+
+/* Body Image Section and Quote Properties */
+
+body section div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
 
 .background {
     background-image: url(./images/matrix-scrolling.jpg);
     background-size: contain;
+    height: 300px;
 }
 
-body section div {
+.quote {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 100px;
+}
 
+/* Main Content, About Me and Apps */
+body main aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
