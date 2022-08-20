@@ -1,14 +1,17 @@
+/* Stored vaiables */
 :root {
     --header-color: blue;
 }
 
-/* Sets to default CSS styling */
+/* Sets to default CSS styling to entire page */
 * {
+    font-family: 'Times New Roman', Times, serif;
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
+/* Body header styling */
 header {
     padding: 10px;
     display: flex;
@@ -29,7 +32,7 @@ header h1 {
     color: var(--header-color);
 }
 
-header nav li {
+header nav ul li {
     font-size: 20px;
     display: contents;
 }
@@ -38,4 +41,15 @@ header nav ul li a {
     color: green;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+/* Body image section and Quote Properties */
+
+.background {
+    background-image: url(./images/matrix-scrolling.jpg);
+    background-size: contain;
+}
+
+body section div {
+
 }
