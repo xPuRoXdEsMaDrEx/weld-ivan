@@ -1,31 +1,41 @@
 :root {
-    --lightblue:(#3489a5);
+    --header-color: blue;
+}
+
+/* Sets to default CSS styling */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
 header {
+    padding: 10px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    background-color: gray;
+    background-color: black ;
+    align-items: baseline;
 }
 
 header h1 {
-    font-size:50px ;
-    background-color: var(--lightblue);
+    font: size 50px ;
+    background-color: green;
+    padding-left: 40px;
+    padding-right: 20px;
+    border: 3px  solid var(--header-color);
 }
 
 .name {
-    color: green;
+    color: var(--header-color);
 }
 
-header nav {
+header nav li {
     font-size: 20px;
-    margin: 40px;
-    display: inherit;
+    display: contents;
 }
 
-header a {
-    color: var(--lightblue);
-    text-decoration: underline 5px;
+header nav ul li a {
+    color: green;
+    padding-left: 25px;
+    padding-right: 25px;
 }
-
