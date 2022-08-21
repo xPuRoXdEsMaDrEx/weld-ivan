@@ -1,6 +1,6 @@
 /* Stored vaiables */
 :root {
-    --main-color: blue;
+    --main-boarder-color: whitesmoke;
 }
 
 /* Sets to default CSS styling to entire page */
@@ -10,38 +10,40 @@
     padding: 0%;
 }
 
-/* Body header Styling */
+/* Body, Header and Navigation Bar Styling */
 header {
     padding: 10px;
     display: flex;
     justify-content: space-between;
     background-color: black ;
     align-items: baseline;
+    height: 65px;
 }
 
 header h1 {
-    font: size 50px ;
-    background-color: green;
+    font-size: 45px;
+    background-color: rgb(13, 128, 13);
     padding: 0px 20px 0px 40px;
-    border: 3px  solid var(--main-color);
+    border: 3px  solid var(--main-boarder-color);
 }
 
-header nav ul li {
-    font-size: 20px;
+header nav li {
+    font-size: 22px;
+    font-weight: bold;
     display: contents;
 }
 
 header nav ul li a {
-    color: green;
-    padding-left: 25px;
-    padding-right: 25px;
+    color: rgb(13, 128, 13);
+    padding: 0px 40px 26.5px 40px;
 }
 
 .name {
-    color: var(--header-color);
+    color: rgb(79, 83, 85);
+    order: ;
 }
 
-/* Body Image Section and Quote Properties */
+/* Self Portrait and Quote below Main header and Nav Bar */
 
 body section div {
     display: flex;
@@ -51,7 +53,7 @@ body section div {
     justify-content: space-around;
 }
 
-.background {
+.image-background {
     background-image: url(./images/matrix-scrolling.jpg);
     background-size: contain;
     height: 300px;
@@ -59,14 +61,104 @@ body section div {
 
 .quote {
     text-align: center;
-    color: white;
-    font-size: 30px;
+    color: whitesmoke;
+    font-size: 40px;
     font-weight: 100px;
 }
 
 /* Main Content, About Me and Apps */
-body main aside {
+main {
+    height: 1000px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: black;
+}
+
+main aside {
+    color: var(--main-boarder-color);
+    display: inline-grid;
+}
+
+main aside p {
+    height: fit-content;
+}
+
+main section {
+    height: 1000px;
+    border-right: 5px solid var(--main-boarder-color);
+    justify-content: space-around;
+    display: grid;
+}
+
+main h2{
+    color: var(--main-boarder-color);
+    font-size: 60px;
+    font-weight: bold;
+    padding-right: 50px;
+}
+
+#disaster {
+    font-size: 20px;
+}
+
+#fuel {
+
+}
+
+#maps {
+
+}
+
+#me {
+    font-size: 30px;
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+#vehicle {
+
+}
+
+#weld {
+
+}
+
+/* Footer, Contact Info*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 30px;
+}
+
+footer section{
+    height: 100px;
+    border-right: 5px solid var(--main-boarder-color);
+}
+
+footer h3{
+    color: var(--main-boarder-color);
+    font-size: 31px;
+    font-weight: bold;
+    padding-right: 50px;
+}
+
+footer aside {
+    color: var(--main-boarder-color);
+    font-size: 22px;
+    padding: 0 75px 0px 75px;
+    font-weight: bold;
+    width: auto;
+}
+
+footer aside ul {
+    display: grid;
+}
+
+.footer-background {
+    background-image: url(./images/blue-circuit-board.jpg);
+    background-size: cover;
+    background-position: center;
 }
