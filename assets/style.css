@@ -14,6 +14,7 @@
 header {
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: black ;
     align-items: baseline;
@@ -88,35 +89,56 @@ main section h3 {
     
 }
 
-main ul p {
-    background-color: dimgray;
-    padding: 5px;
-    border: 2px solid var(--main-boarder-color);
-}
-
-
 #me {
     font-size: 23px;
     padding: 0px 40px 50px 40px;
     border-left: 5px solid var(--main-boarder-color)
 }
 
-.app-image {
-    border: 2px solid var(--main-boarder-color);
-
+.fuel {
+    color: var(--main-boarder-colorgi);
+    background-image: url(./images/fuel.jpg);
 }
 
-.container {
+.horiseon {
+    color: var(--main-boarder-color);
+    background-image: url(./images/hindenburg-disaster.jpg);
+}
+
+.label {
+    font-size: 20px;
+    background-color: dimgray;
+    border: 2px solid var(--main-boarder-color);
+    color: var(--main-boarder-color);
+}
+
+.main-container {
     display: flex;
     align-content: center;
     align-items: flex-start;
 }
 
+.maps {
+    color: var(--main-boarder-color);
+    background-image: url(./images/maps.jpg);
+}
+
 .projects {
     display: flex;
+    flex-direction: column;
     padding: 0px 0px 50px 100px;
     border-left: 5px solid var(--main-boarder-color);
     background-size: contain;
+}
+
+.service {
+    color: var(--main-boarder-color);
+    background-image: url(./images/engine-parts.jpg);
+}
+
+.weld {
+    color: var(--main-boarder-color);
+    background-image: url(./images/welding.jpg);
 }
 
 /* Footer, Contact Info*/
@@ -133,7 +155,7 @@ footer section{
     border-right: 5px solid var(--main-boarder-color);
 }
 
-footer h4 {
+footer h3 {
     color: var(--main-boarder-color);
     font-size: 31px;
     font-weight: bold;
@@ -144,6 +166,7 @@ footer aside {
     color: var(--main-boarder-color);
     font-size: 22px;
     font-weight: bold;
+    text-decoration: underline;
     width: auto;
     flex-direction: row;
     display: inline-flex;
