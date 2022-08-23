@@ -39,8 +39,7 @@ header nav ul li a {
 }
 
 .name {
-    color: rgb(79, 83, 85);
-    order: ;
+    color: rgb(93, 96, 107);
 }
 
 /* Self Portrait and Quote below Main header and Nav Bar */
@@ -61,75 +60,63 @@ body section div {
 
 .quote {
     text-align: center;
-    color: whitesmoke;
+    color: var(--main-boarder-color);
     font-size: 40px;
     font-weight: 100px;
 }
 
 /* Main Content, About Me and Apps */
 main {
-    height: 1000px;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
+    color: var(--main-boarder-color);
     background-color: black;
 }
 
-main aside {
-    color: var(--main-boarder-color);
-    display: inline-grid;
-}
-
-main aside p {
-    height: fit-content;
-}
-
 main section {
-    height: 1000px;
-    border-right: 5px solid var(--main-boarder-color);
-    justify-content: space-around;
-    display: grid;
+    padding: 40px 40px 50px 40px;
 }
 
-main h2{
-    color: var(--main-boarder-color);
+main section h2 {
     font-size: 60px;
-    font-weight: bold;
-    padding-right: 50px;
+    padding-right: 40px;
 }
 
-#disaster {
-    font-size: 20px;
+main section h3 {
+    font-size: 60px;
+    padding-right: 55px;
+    
 }
 
-#fuel {
-
-}
-
-#maps {
-
+main ul p {
+    background-color: dimgray;
+    padding: 5px;
+    border: 2px solid;
 }
 
 #me {
-    font-size: 30px;
-    background-color: blueviolet;
-    padding: 20px;
+    font-size: 27px;
+    padding: 0px 40px 50px 40px;
+    border-left: 5px solid var(--main-boarder-color)
 }
 
-#vehicle {
-
+.container {
+    display: flex;
+    align-content: center;
+    align-items: flex-start;
 }
 
-#weld {
-
+.projects {
+    font-size: 20px;
+    padding: 0px 20px 50px 120px;
+    border-left: 5px solid var(--main-boarder-color);
+    background-size: contain;
 }
 
 /* Footer, Contact Info*/
 
 footer {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: space-evenly;
+    align-items: flex-end;
     padding: 30px;
 }
 
@@ -138,27 +125,30 @@ footer section{
     border-right: 5px solid var(--main-boarder-color);
 }
 
-footer h3{
+footer h4 {
     color: var(--main-boarder-color);
     font-size: 31px;
     font-weight: bold;
-    padding-right: 50px;
+    padding-right: 25px;
 }
 
 footer aside {
     color: var(--main-boarder-color);
     font-size: 22px;
-    padding: 0 75px 0px 75px;
     font-weight: bold;
     width: auto;
+    flex-direction: row;
+    display: inline-flex;
 }
 
 footer aside ul {
-    display: grid;
+    font-size: 25px;
+    padding: 0px 40px 0px 40px;
 }
 
 .footer-background {
-    background-image: url(./images/blue-circuit-board.jpg);
+    background-image: url(./images/circuit-board-green.jpg);
     background-size: cover;
     background-position: center;
+    height: 80px;
 }
