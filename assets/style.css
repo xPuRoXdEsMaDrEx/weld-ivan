@@ -78,24 +78,32 @@ main section {
 main section h2 {
     font-size: 60px;
     padding-right: 40px;
+    padding-left: 40px;
 }
 
 main section h3 {
     font-size: 60px;
     padding-right: 55px;
+    padding-left: 40px;
     
 }
 
 main ul p {
     background-color: dimgray;
     padding: 5px;
-    border: 2px solid;
+    border: 2px solid var(--main-boarder-color);
 }
 
+
 #me {
-    font-size: 27px;
+    font-size: 23px;
     padding: 0px 40px 50px 40px;
     border-left: 5px solid var(--main-boarder-color)
+}
+
+.app-image {
+    border: 2px solid var(--main-boarder-color);
+
 }
 
 .container {
@@ -105,8 +113,8 @@ main ul p {
 }
 
 .projects {
-    font-size: 20px;
-    padding: 0px 20px 50px 120px;
+    display: flex;
+    padding: 0px 0px 50px 100px;
     border-left: 5px solid var(--main-boarder-color);
     background-size: contain;
 }
