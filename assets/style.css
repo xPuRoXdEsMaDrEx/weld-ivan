@@ -44,6 +44,9 @@ header nav ul li a {
 }
 
 /* Self Portrait and Quote below Main header and Nav Bar */
+body{
+    max-width: 1600px;
+}
 
 body section div {
     display: flex;
@@ -55,7 +58,7 @@ body section div {
 
 .image-background {
     background-image: url(./images/matrix-scrolling.jpg);
-    background-size: contain;
+    background-size: cover;
     height: 300px;
 }
 
@@ -89,6 +92,12 @@ main section h3 {
     
 }
 
+main section article a {
+    display: grid;
+    text-decoration: none;
+    padding: 5px;
+}
+
 #me {
     font-size: 23px;
     padding: 0px 40px 50px 40px;
@@ -96,14 +105,29 @@ main section h3 {
 }
 
 .fuel {
-    color: var(--main-boarder-colorgi);
+    height: 200px;
+    width: 350px;
+    background-size: cover;
     background-image: url(./images/fuel.jpg);
+    border: 2px solid var(--main-boarder-color);
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 15px;
 }
 
 .horiseon {
     color: var(--main-boarder-color);
+    height: 500px;
+    width: 700px;
+    background-size: cover;
     background-image: url(./images/hindenburg-disaster.jpg);
+    border: 2px solid var(--main-boarder-color);
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 15px;
 }
+
+
 
 .label {
     font-size: 20px;
@@ -119,26 +143,43 @@ main section h3 {
 }
 
 .maps {
-    color: var(--main-boarder-color);
+    height: 200px;
+    width: 350px;
+    background-size: cover;
     background-image: url(./images/maps.jpg);
+    border: 2px solid var(--main-boarder-color);
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 15px;
 }
 
 .projects {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 0px 50px 100px;
+    display: inline-table;
+    justify-content: space-around;
+    padding-left: 70px;
     border-left: 5px solid var(--main-boarder-color);
-    background-size: contain;
 }
 
 .service {
-    color: var(--main-boarder-color);
+    height: 200px;
+    width: 350px;
+    background-size: cover;
     background-image: url(./images/engine-parts.jpg);
+    border: 2px solid var(--main-boarder-color);
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 15px;
 }
 
 .weld {
-    color: var(--main-boarder-color);
+    height: 200px;
+    width: 350px;
+    background-size: cover;
     background-image: url(./images/welding.jpg);
+    border: 2px solid var(--main-boarder-color);
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 15px;
 }
 
 /* Footer, Contact Info*/
