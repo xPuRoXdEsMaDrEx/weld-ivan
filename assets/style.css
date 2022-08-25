@@ -86,7 +86,7 @@ header nav ul li a:hover {
     font-size: 30px;
     display: flex;
     justify-content: end;
-    text-align: right;
+    text-align: center;
     color: var(--white);
 }
 
@@ -140,7 +140,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     background-color: var(--black);
-    height: 900px;
+    height: 1100px;
 }
 
 .project-grid-wrap {
@@ -153,14 +153,12 @@ header nav ul li a:hover {
 .project-grid {
     width: 70%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: (2, 1);
+    grid-template-rows: (4, 1);
     gap: 15px;
 }
 
 .project {
-    border: solid;
-    color: black;
     display: flex;
     background-size: cover;
     background-position: center;
@@ -180,7 +178,7 @@ header nav ul li a:hover {
     background-image: url("./images/screenshot-horiseon.png");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 600px;
     justify-content: center;
     padding-bottom: 20px;
 }
@@ -188,7 +186,6 @@ header nav ul li a:hover {
 .service {
     background-image: url("./images/engine-parts.jpg");
     height: 200px;
-    background-position: 50% 15%;
     justify-content: flex-start;
     padding-bottom: 10px;
 }
@@ -196,7 +193,6 @@ header nav ul li a:hover {
 .fuel {
     background-image: url("./images/fuel.jpg");
     height: 200px;
-    background-position: 60% 50%;
     justify-content: flex-start;
     padding-bottom: 10px;
 }
@@ -216,6 +212,7 @@ header nav ul li a:hover {
 }
 
 .label {
+    font-size: 25px;
     background-color: dimgray;
     color: var(--white);
     border: 3px solid var(--green);
@@ -282,8 +279,8 @@ footer ul li p:hover {
     border: 20px;
 }
 
-/* Media Query, TABLET Screen of 768px or Smaller */
-@media screen and (max-width: 768px) {
+/* Media Query, TABLET Screen of 850px or Smaller */
+@media screen and (max-width: 850px) {
     header {
         display: flex;
         justify-content: center;
@@ -306,10 +303,18 @@ footer ul li p:hover {
         font-size: 16px;
         line-height: 1.6;
     }
+
+    .horiseon {
+        height: 400px;
+    }
+
+    .label {
+        font-size: 15px;
+    }
 }
 
-/* Media Query, Mobile Phone Screens of 500px or Smaller */
-@media screen and (max-width: 500px) {
+/* Media Query, Mobile Phone Screens of 550px or Smaller */
+@media screen and (max-width: 550px) {
     header {
         justify-content: center;
         padding: 20px;
@@ -353,12 +358,16 @@ footer ul li p:hover {
     .project-grid-wrap {
         width: 100%;
         padding: 10px;
+        height: auto;
     }
     
     .project-grid {
         width: 80%;
         min-width: fit-content;
-        overflow: auto;
+    }
+
+    .horiseon {
+        height: 300px;
     }
 
     footer {
