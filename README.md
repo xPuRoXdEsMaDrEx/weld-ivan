@@ -29,7 +29,7 @@ Screenshot is just for referance purposes, desktop version.
 
 ## Deployed Site Link
 
-- 
+- https://xpuroxdesmadrex.github.io/weld-ivan/
 
 ## GitHub Link
 
