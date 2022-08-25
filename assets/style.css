@@ -1,226 +1,381 @@
-/* Stored vaiables */
+/* Variables */
 :root {
-    --main-boarder-color: whitesmoke;
+    --black: black;
+    --green: green;
+    --white: whitesmoke;
 }
 
-/* Sets to default CSS styling to entire page */
+/* Default Style Settings */
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
-    margin: 0%;
-    padding: 0%;
 }
 
-/* Body, Header and Navigation Bar Styling */
-header {
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: black ;
-    align-items: baseline;
-    height: 65px;
-}
-
-header h1 {
-    font-size: 45px;
-    background-color: rgb(13, 128, 13);
-    padding: 0px 20px 0px 40px;
-    border: 3px  solid var(--main-boarder-color);
-}
-
-header nav li {
-    font-size: 22px;
-    font-weight: bold;
-    display: contents;
-}
-
-header nav ul li a {
-    color: rgb(13, 128, 13);
-    padding: 0px 40px 26.5px 40px;
-}
-
-.name {
-    color: rgb(93, 96, 107);
-}
-
-/* Self Portrait and Quote below Main header and Nav Bar */
-body{
+/* Property for Body */
+body {
     max-width: 1600px;
 }
 
-body section div {
+/* Body, Header and Navigation Bar Section */
+header {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: var(--black);
+    justify-content: space-between;
 }
 
-.image-background {
+header h1 {
+    color: var(--white);
+    font-size: 45px;
+    font-weight: bold;
     background-image: url(./images/matrix-scrolling.jpg);
-    background-size: cover;
-    height: 300px;
+    background-size: contain;
+    padding: 10px 20px 10px 60px;
+    border: 5px solid var(--white);
 }
 
-.quote {
-    text-align: center;
-    color: var(--main-boarder-color);
-    font-size: 40px;
-    font-weight: 100px;
-}
-
-/* Main Content, About Me and Apps */
-main {
-    color: var(--main-boarder-color);
-    background-color: black;
-}
-
-main section {
-    padding: 40px 40px 50px 40px;
-}
-
-main section h2 {
-    font-size: 60px;
-    padding-right: 40px;
-    padding-left: 40px;
-}
-
-main section h3 {
-    font-size: 60px;
-    padding-right: 55px;
-    padding-left: 40px;
-    
-}
-
-main section article a {
-    display: grid;
+header a {
+    color: var(--white);
     text-decoration: none;
-    padding: 5px;
 }
 
-#me {
-    font-size: 23px;
-    padding: 0px 40px 50px 40px;
-    border-left: 5px solid var(--main-boarder-color)
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
 }
 
-.fuel {
-    height: 200px;
-    width: 350px;
+header nav {
+    margin: 20px;
+}
+
+header nav ul li a {
+    padding: 5px 5px 53px 5px;
+    font-size: 25px;
+    margin: 20px 20px 0px 0px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: var(--white);
+    background: var(--green);
+    border-top-right-radius: 15px ;
+    border-top-left-radius: 15px;
+}
+
+/* Self Portrait and Quote below Main header and Nav Bar */
+.portrait {
+    height: 400px;
     background-size: cover;
-    background-image: url(./images/fuel.jpg);
-    border: 2px solid var(--main-boarder-color);
-    justify-content: flex-start;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("./images/matrix-scrolling.jpg");
+}
+
+.portrait img {
+    height: 250px;
+}
+
+.portrait .quote {
+    font-size: 30px;
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    color: var(--white);
+}
+
+.portrait .quote #text {
+    font-size: 35px;
+}
+
+/* Header Class Styling */
+.title {
+    border-right: 5px solid var(--white);
+    min-height: 100%;
+    text-align: right;
+    margin-bottom: 20px;
+    padding-right: 50px;
+    min-width: 20%;
+    max-width: 20%;
+}
+
+/* About Me and Work Headers */
+.title h2 {
+    font-size: 55px;
+    color: var(--green);
+}
+
+/* Contact Me header */
+.title h3 {
+    font-size: 40px;
+    color: var(--white);
+}
+
+/* Main Content, About Me */
+.about-me {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 30px;
+}
+
+.about-me p {
+    color: var(--white);
+    font-size: 25px;
+    width: 90%;
+    line-height: 1.0;
+    padding: 0px 20px 40px 75px;
+}
+
+/* Main Content, Work */
+.work {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+    height: 900px;
+}
+
+.project-grid-wrap {
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-grid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.project {
+    border: solid;
+    color: black;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-end;
     align-items: flex-end;
-    padding-bottom: 15px;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.project:hover {
+    opacity: 1.0;
 }
 
 .horiseon {
-    color: var(--main-boarder-color);
-    height: 500px;
-    width: 700px;
-    background-size: cover;
-    background-image: url(./images/hindenburg-disaster.jpg);
-    border: 2px solid var(--main-boarder-color);
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding-bottom: 15px;
-}
-
-
-
-.label {
-    font-size: 20px;
-    background-color: dimgray;
-    border: 2px solid var(--main-boarder-color);
-    color: var(--main-boarder-color);
-}
-
-.main-container {
-    display: flex;
-    align-content: center;
-    align-items: flex-start;
-}
-
-.maps {
-    height: 200px;
-    width: 350px;
-    background-size: cover;
-    background-image: url(./images/maps.jpg);
-    border: 2px solid var(--main-boarder-color);
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding-bottom: 15px;
-}
-
-.projects {
-    display: inline-table;
-    justify-content: space-around;
-    padding-left: 70px;
-    border-left: 5px solid var(--main-boarder-color);
+    grid-column: 1/3;
+    grid-row: span 2;
+    background-image: url("./images/screenshot-horiseon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
 .service {
+    background-image: url("./images/engine-parts.jpg");
     height: 200px;
-    width: 350px;
-    background-size: cover;
-    background-image: url(./images/engine-parts.jpg);
-    border: 2px solid var(--main-boarder-color);
+    background-position: 50% 15%;
     justify-content: flex-start;
-    align-items: flex-end;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.fuel {
+    background-image: url("./images/fuel.jpg");
+    height: 200px;
+    background-position: 60% 50%;
+    justify-content: flex-start;
+    padding-bottom: 10px;
 }
 
 .weld {
+    background-image: url("./images/welding.jpg");
     height: 200px;
-    width: 350px;
-    background-size: cover;
-    background-image: url(./images/welding.jpg);
-    border: 2px solid var(--main-boarder-color);
     justify-content: flex-start;
-    align-items: flex-end;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
-/* Footer, Contact Info*/
+.maps {
+    background-image: url("./images/maps.jpg");
+    height: 200px;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+}
 
+.label {
+    background-color: dimgray;
+    color: var(--white);
+    border: 3px solid var(--green);
+}
+
+/* Footer, Contact Info */
 footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    padding: 30px;
-}
-
-footer section{
-    height: 100px;
-    border-right: 5px solid var(--main-boarder-color);
-}
-
-footer h3 {
-    color: var(--main-boarder-color);
-    font-size: 31px;
-    font-weight: bold;
-    padding-right: 25px;
-}
-
-footer aside {
-    color: var(--main-boarder-color);
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: underline;
-    width: auto;
-    flex-direction: row;
-    display: inline-flex;
-}
-
-footer aside ul {
-    font-size: 25px;
-    padding: 0px 40px 0px 40px;
-}
-
-.footer-background {
     background-image: url(./images/circuit-board-green.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 80px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-wrap {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-method {
+    width: 60%;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bolder;
+    align-items: baseline;
+    list-style: none;
+}
+
+footer ul li {
+    font-weight: bold;
+    color: var(--white);
+}
+
+footer ul li p {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+footer ul li a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    background: var(--black);
+    color: var(--white);
+    border: 10px;
+}
+
+footer ul li p:hover {
+    background: var(--black);
+    color: var(--white);
+    border: 20px;
+}
+
+/* Media Query, TABLET Screen of 768px or Smaller */
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .portrait .quote {
+        font-size: 28px;
+        padding-right: 20px;
+    }
+    
+    .portrait .quote #quote-text {
+        font-size: 35px;
+    }
+
+    .title h2 {
+        font-size: 35px;
+    }
+
+    .about-me p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+/* Media Query, Mobile Phone Screens of 500px or Smaller */
+@media screen and (max-width: 500px) {
+    header {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    header nav ul {
+        min-height: 80px;
+    }
+
+    .portrait {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .title {
+        border-bottom: 5px solid var(--green);
+        border-right: none;
+        text-align: center;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .about-me p {
+        font-size: 16px;
+        line-height: 1.6;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .work {
+        flex-direction: column;
+        padding: 30px 0;
+        height: fit-content;
+    }
+
+    .project-grid-wrap {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .project-grid {
+        width: 80%;
+        min-width: fit-content;
+        overflow: auto;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    .content-wrap {
+        width: 100%;
+    }
+
+    footer ul li {
+        padding: 10px;
+        text-align: center;
+    }
+    
 }

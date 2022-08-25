@@ -1,113 +1,116 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+    <!-- Head, Title and Stylesheet Link-->
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gabriel I Rodriguez-Rivas Portfolio</title>
         <link rel="stylesheet" href="./assets/style.css" />
-        <title>Portfolio Gabriel I Rodriguez-Rivas Resume and Projects</title>
     </head>
     <body>
-        <!-- Body, Header and Navigation Bar Section-->
+        <!-- Body, Header and Navigation Bar Section -->
         <header>
-            <h1>Gabriel <span class="name">Rodriguez</span></h1>
+            <h1>Gabriel Rodriguez</h1>
             <nav>
                 <ul>
                     <li>
                         <a href="#about-me">About Me</a>
                     </li>
-                    <li><a href="#work">Work</a></li>
+                    <li>
+                        <a href="#my-work">My Work</a>
+                    </li>
                     <li>
                         <a href="#contact-me">Contact Me</a>
                     </li>
                     <li>
-                        <a href="https://myresumepdflink">Resume</a>
+                        <a href="./assets/docs/Gabriel I Rodriguez Resume.docx">Resume</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <!-- Self Portrait and Quote below Main header and Nav Bar-->
-        <section>
-            <div class="image-background">
-                <img src="./assets/images/Ivan.jpg" alt="Portrait of Gabriel Rodriguez" width="165" height="175" />
-                <q class="quote">Get busy living<br>or<br>get busy dying.<br><br>--Stephen King</q>
+        <!-- Self Portrait and Quote below Main header and Nav Bar -->
+        <section class="portrait">
+            <div>
+                <img src="./assets/images/Ivan.jpg" alt="Picture of Gabriel Rodriguez">
+            </div>
+            <div class="quote">
+                <blockquote>
+                    <p id="text">
+                        Get busy living<br>or<br>get busy dying.<br><br>--Stephen King
+                    </p>
+                </blockquote>
             </div>
         </section>
-        <!-- Main Content, About Me and Apps -->
-        <main>
-            <div>
-                <section class="main-container">
-                    <h2 id="about-me">About Me</h2>
-                    <div>
-                        <p id="me">Hello there and welcome! My name is Gabriel Rodriguez I am a new up and coming 
-                            developer attending the UCLA extension coding bootcamp.<br><br>Not to mention 
-                            I also have 13 years of experiance as a maintenance technician. Many of my other 
-                            skills include welding, metal fabrication, Programable Logic Controllers, 
-                            hydraulic systems, electrical & mechanical troubleshooting.<br><br>On my free time you can 
-                            find me venturing out into the wilderness to go camping with several of my friends and family.<br><br>
-                            Thank you for visiting my page, I hope to see or hear from you again.</p>
-                    </div>
-                </section>
+        <!-- Main Content, About Me -->
+        <section id="about-me" class="about-me">
+            <div class="title">
+                <h2>About Me</h2>
             </div>
             <div>
-                <section class="main-container">
-                    <h3 id="work">Work</h3>
-                        <article class="projects">
-                            <ul>
-                                <a href="http://www.disasterapp.com">
-                                    <div class="horiseon">
-                                        <p class="label">Horiseon Refactor</p>
-                                    </div>
-                                </a>
-                            </ul>
-                            <ul>
-                                <a href="https://www.car-services.com">
-                                    <div class="service">
-                                        <p class="label">Vehicle Service Schedule</p>
-                                    </div>
-                                </a>
-                            </ul>
-                            <ul>
-                                <a href="https://www.out-of-fuel.com">
-                                    <div >
-                                        <div class="fuel">
-                                        <p class="label">On-demand Fuel Delivery</p>
-                                    </div>
-                                </a>
-                            </ul>
-                            <ul>
-                                <a href="https://www.weld-bud.com" >
-                                    <div class="weld">
-                                        <p class="label">Welding Buddy</p>
-                                    </div>
-                                </a>
-                            </ul>
-                            <ul>
-                                <a href="https://www.offgrid-maps.com">
-                                    <div class="maps">
-                                        <p class="label">Offline GPS Maps</p>
-                                    </div>
-                                </a>
-                            </ul>
-                        </article>
-                </section>
+                <p>
+                    Hello there and welcome! My name is Gabriel Rodriguez I am a new up and coming 
+                    developer attending the UCLA extension coding bootcamp.<br><br>Not to mention 
+                    I also have 13 years of experiance as a maintenance technician. Many of my other 
+                    skills include welding, metal fabrication, Programable Logic Controllers, 
+                    hydraulic systems, electrical & mechanical troubleshooting.<br><br>On my free time you can 
+                    find me venturing out into the wilderness to go camping with several of my friends and family.<br><br>
+                    Thank you for visiting my page, I hope to see or hear from you again.
+                </p>
             </div>
-        </main>
+        </section>
+        <!-- Main Content, Work -->
+        <section id="my-work" class="work">
+            <div class="title">
+                <h2>Work</h2>
+            </div>
+            <article class="project-grid-wrap">
+                <div class="project-grid">
+                    <a href="https://xpuroxdesmadrex.github.io/horiseon-services-homepage/" class="project horiseon">
+                        <ul class="label">
+                            <p>Horiseon Refactor</p>
+                        </ul>
+                    </a>
+                    <a href="https://car-service.com" class="project service">
+                        <ul class="label">
+                            <p>Vehicle Service Schedule</p>
+                        </ul>
+                    </a>
+                    <a href="https://out-of-fuel.com" class="project fuel">
+                        <ul class="label">
+                            <p>On-demand Fuel Delivery</p>
+                        </ul>
+                    </a>
+                    <a href="https://weld-bud.com" class="project weld">
+                        <ul class="label">
+                            <p>Welding Buddy</p>
+                        </ul>
+                    </a>
+                    <a href="offgrid-maps.com" class="project maps">
+                        <ul class="label">
+                            <p>Offline GPS Maps</p>
+                        </ul>
+                    </a>
+                </div>
+            </article>
+        </section>
         <!-- Footer, Contact Info -->
-        <footer class="footer-background">
-            <section>
-                <h3 id="contact-me">Contact Me</h3>
+        <footer id="contact-me">
+            <div class="title"><h3>Contact Me</h3></div>
+            <section class="contact-wrap">
+                <div id="contact-method">
+                    <ul>
+                        <li>
+                            <p>(626) 000-0000</p>
+                        </li>
+                        <li>
+                            <p>Ivanrodweld@gmail.com</p>
+                        </li>
+                        <li>
+                            <a href="https://github.com/xPuRoXdEsMaDrEx">GitHub Account</a>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <aside>
-                <ul>
-                    <p>Tele: (626)000-0000</p>
-                </ul>
-                <ul>
-                    <p>Email: ivanweld@me.com</p>
-                </ul>
-                <ul>
-                    <p>GitHub: ivanweld@github.com</p>
-                </ul> 
-            </aside>      
         </footer>
     </body>
 </html>
