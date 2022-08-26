@@ -158,7 +158,7 @@ header nav ul li a:hover {
     gap: 15px;
 }
 
-.project {
+.project-position {
     display: flex;
     background-size: cover;
     background-position: center;
