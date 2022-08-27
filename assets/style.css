@@ -167,7 +167,7 @@ header nav ul li a:hover {
     opacity: 0.5;
 }
 
-.project:hover {
+.project-position:hover {
     opacity: 1.0;
 }
 
